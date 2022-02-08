@@ -1,10 +1,19 @@
 /* Reset CSS */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+:root {
+  --bg-color: #1a202c;
+  --white-color: white;
+  --card-bg: #272a31;
+  --card-text: rgb(182, 179, 179);
+  --black-text: black;
+}
+
 body {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  background: #1A202C;
-  color: white;
+  font-family: "Poppins", sans-serif;
+  background: var(--bg-color);
+  color: var(--white-color);
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -18,20 +27,65 @@ body {
 
 /* Main Container */
 .container {
-  width: 700px;
-  height: 100vh;
+  width: 650px;
   text-align: center;
   padding: 20px 0px;
 }
-.data{
-    height: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+.header {
+  margin-bottom: 20px;
+}
+.data {
+  height: 100%;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Card Refactor of my own component library. */
+.card-width {
+  max-width: 300px;
+  border-radius: 10px;
+  background: var(--card-bg) !important;
+  color: var(--white-color);
+  height: 350px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+.card-width:hover {
+  background: var(--card-text) !important;
+  color: var(--black-text);
+}
+.card-width:hover .card_data p {
+  color: var(--black-text);
+}
+.card_data p:nth-child(1) {
+  color: var(--white-color);
+  font-weight: 700;
+}
+.card_data p {
+  font-weight: 500;
+  color: var(--card-text);
+  margin-bottom: 5px;
+}
+
+.card-width img {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
 }
 
 @media (max-width: 767px) {
-  .container {
+  .container{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .data{
+    flex-direction: column;
+    display: block;
+    align-items: center;
   }
 }
