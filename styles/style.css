@@ -28,11 +28,11 @@ body {
 /* Main Container */
 .container {
   width: 650px;
-  text-align: center;
-  padding: 20px 0px;
+  height: 100%;
 }
 .header {
-  margin-bottom: 20px;
+  margin: 20px;
+  text-align: center;
 }
 .data {
   height: 100%;
@@ -45,12 +45,12 @@ body {
 /* Card Refactor of my own component library. */
 .card-width {
   max-width: 300px;
-  border-radius: 10px;
+  border-radius: 0.7rem;
   background: var(--card-bg) !important;
   color: var(--white-color);
   height: 350px;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-bottom: 1.4rem;
   transition: 0.3s;
 }
 .card-width:hover {
@@ -76,16 +76,37 @@ body {
   width: 100%;
 }
 
+/* Question Page CSS */
+
+.score {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem;
+}
+.questions {
+  padding: 0.7rem;
+}
+.options{
+  margin-top: 2.4rem;
+}
+.opt-button{
+  width: 100%;
+  border-radius: 1rem !important;
+  margin-bottom: 1.2rem;
+  height: 50px;
+}
+
 @media (max-width: 767px) {
-  .container{
+  .container {
+    height: 100%;
     width: 100%;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
   }
-  .data{
+  .data {
     flex-direction: column;
-    display: block;
     align-items: center;
   }
 }
