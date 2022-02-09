@@ -7,6 +7,7 @@
   --card-bg: #272a31;
   --card-text: rgb(182, 179, 179);
   --black-text: black;
+  --green-color: #219c21;
 }
 
 body {
@@ -95,6 +96,16 @@ body {
   border-radius: 1rem !important;
   margin-bottom: 1.2rem;
   height: 50px;
+  font-family: inherit;
+}
+.btn-green{
+  background: var(--green-color) !important;
+}
+.finalscore{
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 800;
 }
 
 @media (max-width: 767px) {
