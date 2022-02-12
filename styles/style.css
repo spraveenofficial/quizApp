@@ -68,7 +68,7 @@ body {
 .card_data p {
   font-weight: 500;
   color: var(--card-text);
-  margin-bottom: 5px;
+  margin-bottom: 0.315rem;
 }
 
 .card-width img {
@@ -107,7 +107,18 @@ body {
   font-size: 1.2rem;
   font-weight: 800;
 }
+/* Terms and conditon page */
 
+.terms-and-condition{
+  margin: 0 0.625rem;
+  text-align: justify;
+}
+.tandcheckbox{
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin: 1.2rem 0;
+}
 @media (max-width: 767px) {
   .container {
     height: 100%;
