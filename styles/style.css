@@ -42,7 +42,10 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
+.btn-next {
+  display: flex;
+  justify-content: flex-end;
+}
 /* Card Refactor of my own component library. */
 .card-width {
   max-width: 300px;
@@ -88,20 +91,20 @@ body {
 .questions {
   padding: 0.7rem;
 }
-.options{
+.options {
   margin-top: 2.4rem;
 }
-.opt-button{
+.opt-button {
   width: 100%;
   border-radius: 1rem !important;
   margin-bottom: 1.2rem;
   height: 50px;
   font-family: inherit;
 }
-.btn-green{
+.btn-green {
   background: var(--green-color) !important;
 }
-.finalscore{
+.finalscore {
   width: 100%;
   text-align: center;
   font-size: 1.2rem;
@@ -109,11 +112,11 @@ body {
 }
 /* Terms and conditon page */
 
-.terms-and-condition{
+.terms-and-condition {
   margin: 0 0.625rem;
   text-align: justify;
 }
-.tandcheckbox{
+.tandcheckbox {
   display: flex;
   align-items: center;
   gap: 0.625rem;
